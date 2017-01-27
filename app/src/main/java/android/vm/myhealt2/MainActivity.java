@@ -22,7 +22,7 @@ public class MainActivity extends ListActivity {
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
-        setContentView(R.layout.content_main);
+        setContentView(R.layout.activity_main);
         medical = (EditText) findViewById(R.id.medical_name);
         date = (EditText) findViewById(R.id.date);
         adapter=new ArrayAdapter<String>(this,
