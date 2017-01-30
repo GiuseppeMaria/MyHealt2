@@ -1,41 +1,61 @@
 package android.vm.myhealt2;
 
+import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class MainActivity extends ListActivity {
-    //LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
-    ArrayList<String> listItems=new ArrayList<String>();
-    EditText medical, date;
+public class MainActivity extends AppCompatActivity {
 
-    //DEFINING A STRING ADAPTER WHICH WILL HANDLE THE DATA OF THE LISTVIEW
-    ArrayAdapter<String> adapter;
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager layoutManager;
+    AdapterAssunzione adapter;
+    FloatingActionButton pluse;
+    Assunzione aggiunta;
+    EditText nome,data;
+    List<Assunzione> aggiunti;
 
-    //RECORDING HOW MANY TIMES THE BUTTON HAS BEEN CLICKED
-    int clickCounter=0;
 
     @Override
     public void onCreate(Bundle icicle) {
         super.onCreate(icicle);
         setContentView(R.layout.activity_main);
-        medical = (EditText) findViewById(R.id.medical_name);
-        date = (EditText) findViewById(R.id.date);
-        adapter=new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1,
-                listItems);
-        setListAdapter(adapter);
+
+        recyclerView= (RecyclerView) findViewById(R.id.lista_medicinali);
+        layoutManager= new LinearLayoutManager(this);
+        adapter= new AdapterAssunzione();
+        nome = (EditText) findViewById(R.id.medical_name);
+        data = (EditText) findViewById(R.id.date);
+
+
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.setAdapter(adapter);
+        aggiunti = new ArrayList<>();
+
+        pluse = (FloatingActionButton) findViewById(R.id.aggiungi_medicine);
+        pluse.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                aggiunta = new Assunzione(nome.getText()+"",data.getText()+"");
+                aggiunti.add(aggiunta);
+                adapter.setDataSet(aggiunti);
+                nome.setText("");
+                data.setText("");
+            }
+        });
+
+
     }
 
-    //METHOD WHICH WILL HANDLE DYNAMIC INSERTION
-    public void addItems(View v) {
-        listItems.add("Nome medicinale : "+ medical.getText() + "\n Data : " + date.getText() );
-        medical.setText("");
-        date.setText("");
-        adapter.notifyDataSetChanged();
-    }
+
 }
