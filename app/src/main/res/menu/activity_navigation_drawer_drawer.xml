@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_today"
+            android:title="@string/action_today" />
+        <item
+            android:id="@+id/nav_diary"
+            android:title="@string/action_diary" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:title="@string/action_calendar" />
+
+    </group>
+
+    <item android:title="@string/action_settings">
+        <menu>
+            <item
+                android:id="@+id/nav_settings_account"
+                android:title="@string/action_settingaccount" />
+            <item
+            android:id="@+id/nav_settings_notifier"
+            android:title="@string/action_settingsnotifier" />
+        </menu>
+    </item>
+
+</menu>

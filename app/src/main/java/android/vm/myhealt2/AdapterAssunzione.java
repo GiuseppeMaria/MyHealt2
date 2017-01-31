@@ -27,8 +27,10 @@ public class AdapterAssunzione extends RecyclerView.Adapter<RecyclerView.ViewHol
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         MedicineViewHolder viewHolder= (MedicineViewHolder) holder;
-        viewHolder.medicinale.setText((CharSequence) dataSet.get(position).getName());
-        viewHolder.date.setText((CharSequence) dataSet.get(position).getData()) ;
+        viewHolder.medicinale.setText((CharSequence) dataSet.get(position).getMedicina().getNome());
+        viewHolder.modAssunzione.setText((CharSequence) dataSet.get(position).getMedicina().getModalitaAssunzione());
+        viewHolder.date.setText((CharSequence) dataSet.get(position).getData());
+        viewHolder.ora.setText((CharSequence) dataSet.get(position).getOra());
     }
 
     @Override
@@ -46,13 +48,16 @@ public class AdapterAssunzione extends RecyclerView.Adapter<RecyclerView.ViewHol
     }
 
     private class MedicineViewHolder extends RecyclerView.ViewHolder {
-        TextView medicinale, date;
+        TextView medicinale, modAssunzione, date, ora;
 
         public MedicineViewHolder(View v) {
             super(v);
 
             medicinale = (TextView) v.findViewById(R.id.medicinale);
+            modAssunzione = (TextView) v.findViewById(R.id.mod_assunzione);
             date = (TextView) v.findViewById(R.id.data);
+            ora = (TextView) v.findViewById(R.id.ora);
+
 
         }
     }
