@@ -1,5 +1,7 @@
 package android.vm.myhealt2;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.LinearLayoutManager;
@@ -28,6 +30,7 @@ public class MainActivity extends AppCompatActivity
     Assunzione aggiunta;
     EditText nome,data;
     List<Assunzione> aggiunti;
+    Activity activity = this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,6 +102,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_today) {
 
         } else if (id == R.id.nav_calendar) {
+            Intent intent = new Intent(activity,CalendarActivity.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_settings_account) {
 

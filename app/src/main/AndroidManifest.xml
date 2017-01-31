@@ -23,7 +23,9 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/action_today"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CalendarActivity"
+            android:label="@string/action_calendar"></activity>
     </application>
 
 </manifest>
