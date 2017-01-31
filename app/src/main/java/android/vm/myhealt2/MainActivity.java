@@ -45,12 +45,6 @@ public class MainActivity extends AppCompatActivity {
         pluse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                aggiunta = new Assunzione(nome.getText()+"",data.getText()+"");
-                aggiunti.add(aggiunta);
-                adapter.setDataSet(aggiunti);
-                nome.setText("");
-                data.setText("");
             }
         });
 

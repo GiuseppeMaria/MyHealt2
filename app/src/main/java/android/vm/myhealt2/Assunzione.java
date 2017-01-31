@@ -8,19 +8,22 @@ import android.text.Editable;
 
 public class Assunzione {
 
-    private String name,data;
+    private String ora,data;
+    private Medicina medicina;
 
-    public Assunzione(String name, String data) {
-        this.name = name;
+    public Assunzione(String ora, String data, Medicina medicina) {
+
+        this.ora = ora;
         this.data = data;
+        this.medicina = medicina;
     }
 
-    public String getName() {
-        return name;
+    public String getOra() {
+        return ora;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setOra(String ora) {
+        this.ora = ora;
     }
 
     public String getData() {
@@ -30,4 +33,14 @@ public class Assunzione {
     public void setData(String data) {
         this.data = data;
     }
+
+    public Medicina getMedicina() {
+        return medicina;
+    }
+
+    public void setMedicina(Medicina medicina) {
+        this.medicina = medicina;
+    }
+
+
 }

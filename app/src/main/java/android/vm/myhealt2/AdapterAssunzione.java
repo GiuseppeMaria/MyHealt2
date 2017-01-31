@@ -41,6 +41,10 @@ public class AdapterAssunzione extends RecyclerView.Adapter<RecyclerView.ViewHol
         notifyDataSetChanged();
     }
 
+    public void addElementDataSet(Assunzione assunzione){
+        this.dataSet.add(assunzione);
+    }
+
     private class MedicineViewHolder extends RecyclerView.ViewHolder {
         TextView medicinale, date;
 

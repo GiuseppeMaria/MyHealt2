@@ -7,58 +7,21 @@
     android:fitsSystemWindows="true"
     tools:context="android.vm.myhealt2.MainActivity">
 
-    <LinearLayout
-
-        android:orientation="vertical"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-
-        <TextView
-            android:text="Medical Name:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/medical"
-            android:layout_weight="0.12" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:id="@+id/medical_name" />
-
-        <TextView
-            android:text="Date:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/date_ass"
-            android:layout_weight="0.10" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="date"
-            android:ems="10"
-            android:id="@+id/date" />
-
         <android.support.v7.widget.RecyclerView
             android:layout_width="fill_parent"
             android:layout_height="375dp"
             android:id="@+id/lista_medicinali"/>
 
 
-        <android.support.design.widget.FloatingActionButton
-            android:layout_width="51dp"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            app:srcCompat="@android:drawable/ic_input_add"
-            android:layout_gravity="right"
-            android:id="@+id/aggiungi_medicine"
-            app:elevation="24dp"
-            android:layout_weight="1.20" />
-
-
-    </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:layout_margin="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/write"
+        android:layout_gravity="bottom|right"
+        android:id="@+id/aggiungi_medicine"
+        app:elevation="24dp" />
 
 
 </android.support.design.widget.CoordinatorLayout>
