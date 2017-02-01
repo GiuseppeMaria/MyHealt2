@@ -20,12 +20,12 @@
         android:layout_marginTop="30dp"
         android:textAlignment="center"
         android:textColor="@color/colorBleak"
-        android:id="@+id/textView2"
+        android:id="@+id/text_istruction"
         android:layout_marginRight="30dp"
         android:layout_marginLeft="30dp"/>
 
-    <Button android:text="aggiungi medicinale"
-        android:id="@+id/bottoneaggiungi"
+    <Button android:text="@string/scannertext"
+        android:id="@+id/bottone_scanner"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginLeft="30dp"
@@ -39,8 +39,8 @@
         android:elevation="8dp"></Button>
 
 
-    <Button android:text="Scanner"
-        android:id="@+id/scanner"
+    <Button android:text="@string/ricerca_manuale"
+        android:id="@+id/bottone_aggiungi"
         android:layout_height="40dp"
         android:layout_width="match_parent"
         android:layout_marginLeft="30dp"
