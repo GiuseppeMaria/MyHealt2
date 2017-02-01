@@ -26,7 +26,9 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="fill_parent"
         android:layout_height="375dp"
-        android:id="@+id/lista_medicinali"/>
+        android:layout_marginTop="60dp"
+        android:id="@+id/lista_medicinali"
+        android:layout_gravity="top"/>
 
 
     <android.support.design.widget.FloatingActionButton
@@ -37,7 +39,7 @@
         app:srcCompat="@drawable/write"
         android:layout_gravity="bottom|end"
         android:id="@+id/aggiungi_medicine"
-        app:elevation="24dp"
+        app:elevation="8dp"
         android:background="@color/colorPrimary"/>
 
 </android.support.design.widget.CoordinatorLayout>

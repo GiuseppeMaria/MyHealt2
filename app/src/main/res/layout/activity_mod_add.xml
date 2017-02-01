@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="222dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/green_scanner"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/istruction"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorBleak"
+        android:id="@+id/textView2"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"/>
+
+    <Button android:text="aggiungi medicinale"
+        android:id="@+id/bottoneaggiungi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:textColor="@color/colorName"
+        android:background="@color/colorPrimary"
+        android:elevation="8dp"></Button>
+
+
+    <Button android:text="Scanner"
+        android:id="@+id/scanner"
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:layout_gravity="bottom"
+        android:textColor="@color/colorPrimary"
+        android:background="@color/colorName"
+        android:elevation="8dp">
+    </Button>
+
+</LinearLayout>

@@ -11,6 +11,7 @@
     <string name="mail">MyHealt@gmail.com</string>
     <string name="action_calendar">Calendario</string>
     <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="istruction">Puoi scansionare il codice a barre sulla confezione del farmaco con la fotocamera del dispositivo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

@@ -4,4 +4,5 @@
     <color name="colorPrimary2">#007000</color>
     <color name="colorPrimaryDark">#006000</color>
     <color name="colorName">#FFFFFF</color>
+    <color name="colorBleak">#000000</color>
 </resources>

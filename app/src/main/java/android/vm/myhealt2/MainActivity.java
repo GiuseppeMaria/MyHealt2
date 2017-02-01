@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity
         pluse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent i = new Intent(activity,ModAddActivity.class);
+                startActivity(i);
             }
         });
     }
