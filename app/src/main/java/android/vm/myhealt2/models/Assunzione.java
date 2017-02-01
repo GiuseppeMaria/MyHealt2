@@ -1,6 +1,4 @@
-package android.vm.myhealt2;
-
-import android.text.Editable;
+package android.vm.myhealt2.models;
 
 /**
  * Created by Francesco on 27/01/2017.

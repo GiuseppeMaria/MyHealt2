@@ -1,4 +1,4 @@
-package android.vm.myhealt2;
+package android.vm.myhealt2.models;
 
 /**
  * Created by Francesco on 30/01/2017.

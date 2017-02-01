@@ -1,9 +1,11 @@
-package android.vm.myhealt2;
+package android.vm.myhealt2.ui.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.vm.myhealt2.models.Assunzione;
+import android.vm.myhealt2.R;
 import android.widget.TextView;
 
 import java.util.ArrayList;

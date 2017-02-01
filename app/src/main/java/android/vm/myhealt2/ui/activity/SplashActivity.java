@@ -1,9 +1,10 @@
-package android.vm.myhealt2;
+package android.vm.myhealt2.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.vm.myhealt2.R;
 
 
 public class SplashActivity extends Activity {

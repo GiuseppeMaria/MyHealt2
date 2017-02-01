@@ -1,4 +1,4 @@
-package android.vm.myhealt2;
+package android.vm.myhealt2.ui.activity;
 
 
 import android.app.Activity;

@@ -1,4 +1,4 @@
-package android.vm.myhealt2;
+package android.vm.myhealt2.ui.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,6 +15,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.vm.myhealt2.R;
+import android.vm.myhealt2.models.Assunzione;
+import android.vm.myhealt2.ui.adapter.AdapterAssunzione;
+import android.vm.myhealt2.ui.adapter.DateTimePiket;
 import android.widget.EditText;
 
 import java.util.ArrayList;
@@ -31,6 +35,8 @@ public class MainActivity extends AppCompatActivity
     EditText nome,data;
     List<Assunzione> aggiunti;
     Activity activity = this;
+    int [] date = new int[3];
+    int []hour = new int [2];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -104,8 +110,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_today) {
 
         } else if (id == R.id.nav_calendar) {
-            Intent intent = new Intent(activity,CalendarActivity.class);
-            startActivity(intent);
+            date = DateTimePiket.pikerdate(activity);
+           /* Intent intent = new Intent(activity,CalendarActivity.class);
+            startActivity(intent);*/
 
         } else if (id == R.id.nav_settings_account) {
 
